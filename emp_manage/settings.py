@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '7#(#pt^xmrh%_0x6_m7=1s-&p^lsp+l((j2af(ocj^7(gqnp=s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tf-portal.herokuapp.com','localhost']
 
 
 # Application definition

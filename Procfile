@@ -1,0 +1,1 @@
+web: gunicorn emp_manage.wsgi --log-file -
