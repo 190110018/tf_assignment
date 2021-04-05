@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
 
 
 
@@ -134,6 +135,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,"static")
 SITE_ID = 1
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
@@ -152,6 +154,18 @@ SOCIALACCOUNT_PROVIDERS = {
         'APP': {
             'client_id': '478706467342-2rfds7ug35v4m48b3lj1sit7th1jtb8a.apps.googleusercontent.com',
             'secret': 'AXs3XvqiY4Bovli0IniFndad',
+            'key': ''
+        }
+    }
+}
+SOCIALACCOUNT_PROVIDERS = {
+    'facebook': {
+        # For each OAuth based provider, either add a ``SocialApp``
+        # (``socialaccount`` app) containing the required client
+        # credentials, or list them here:
+        'APP': {
+            'client_id': '3081907838703179',
+            'secret': 'f19dc5adcca5ae1d0873f97376cfad2b',
             'key': ''
         }
     }
